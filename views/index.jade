@@ -2,4 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  form(id='itemform')
+    input(type='text',id='task')
+    button submit
+  div(id='mainview')
+  
+
+
+block bodyjavascript
+  script(src='/js/app-models.js')
+  script(src='/js/app-views.js')
+  script(src='/js/app.js')

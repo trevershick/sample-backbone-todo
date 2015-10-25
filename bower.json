@@ -5,5 +5,11 @@
     "**/.*",
     "node_modules",
     "components"
-  ]
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "lodash": "~3.10.1",
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
 }

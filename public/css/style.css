@@ -1,8 +1,87 @@
 body {
+  font-size: 14pt;
+  font-family: "Helvetica";
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+div.filterbar {
+    text-align: center;
+}
+div.filterbar a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+span.task.complete {
+    text-decoration: line-through;
+}
+span.task {
+    cursor: pointer;
+}
+div.toolbar {
+    padding:15px;
+    border:1px solid #5f5f5f;
+    margin:3px;
+    font-size: 14pt;
+}
+form {
+    background-color: #c9c9c9;
+    padding:10px;
+    font-size:16pt;
+    border: 1px solid grey;
+    margin:3px;
+}
+input {
+    border: 1px solid grey;
+    margin-left: 15px;
+    padding:3px;
+    font-size: 14pt;
+    line-height:30px;
+    width:300px;
+}
+button {
+    font-size: 16pt;
+    margin-left:30px;
+    line-height:30px;
+}
+form:before {
+    line-height:30px;
+    content: "Add new task "
+}
+div.toolbar a {
+    text-decoration: none;
+    width:100%;
+    height:100%;
+}
+div.toolbar a:first-child:before {
+    content: '<< '
+}
+ul.tasks {
+    margin: inherit;
+    padding: inherit;
+}
+li.task > i {
+    font-size: 16pt;
+    margin-right:10px;
+    color:red;
+}
+li.task i.fa-trash {
+    margin-left:20px;
+    color:silver;
+}
+li.task i.fa-check-circle {
+    color:green;
+}
+li.task {
+    line-height:14pt;
+    list-style: none;
+    padding:15px;
+    border:1px solid #5f5f5f;
+    margin:3px;
+}
+li.task > * {
+    cursor:pointer;
 }
